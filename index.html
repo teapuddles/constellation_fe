@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script defer src='index.js'> </script>
+  <script defer src='modal.js'> </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <div class="topnav">
+    <h1>East Side Stargazing</h1>
+    <a id="winter">Winter</a>
+    <a id="spring">Spring</a>
+    <a id="summer">Summer</a>
+    <a id="autumn">Autumn</a>
+    <a id="all-seasons">All Seasons</a>
+    <a id="login">Log-In/New User</a>
+  </div>
+</head>
+<body>
+  <aside>
+    <h1>Constellations</h1>
+    <h2>Stars by Season</h2>
+    <ul id="constellation-container">
+      <!-- Add Stars Here -->
+    </ul>
+    <h2>Other Links</h2>
+    </ul>
+  </aside>
+  <section>
+    <div id="star-detail">
+      <h1>Star Info Here</h1>
+    </div>
+  </section>
+  <div id="modal" style="display: none;" data-action="close">
+    <form id="new-user-form">
+      <h4>Login/Create New User</h4>
+      <label for="username">Username</label>
+      <input type="text" name="name">
+      <input type="submit" value="Login or Create User">
+    </form>
+    <form id="update-user-form">
+      <h4>Update Username</h4>
+      <label for="new-username">New Username</label>
+      <input type="text" name="new-name">
+      <input type="submit" value="Update Your Username">
+    </form>
+  </div>
+</body>
+</html>
