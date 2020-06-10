@@ -7,7 +7,7 @@ let autumnArr = []
 let allArr = []
 
 // fetch all constellations
-fetch(`https://east-side-stargazing-be.herokuapp.com/`)
+fetch(`https://east-side-stargazing-be.herokuapp.com/constellations`)
   .then(r => r.json())
   .then(constell => {
     winterArr = constell.filter(constell => constell.season_id === 1)
