@@ -7,7 +7,7 @@ let autumnArr = []
 let allArr = []
 
 // fetch all constellations
-fetch("http://localhost:3000/constellations")
+fetch(`https://east-side-stargazing-be.herokuapp.com/`)
   .then(r => r.json())
   .then(constell => {
     winterArr = constell.filter(constell => constell.season_id === 1)
@@ -70,7 +70,7 @@ function renderOneConstell(constell) {
       // local storage is holding my user id so I can create a like.
     }
 
-    fetch('http://localhost:3000/likes', {
+    fetch( `https://east-side-stargazing-be.herokuapp.com/likes`, {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"
@@ -115,7 +115,7 @@ function handleUserInfo(e) {
   const newUserInfo = {
     username: userName
   }
-  fetch('http://localhost:3000/users', {
+  fetch('https://east-side-stargazing-be.herokuapp.com/users', {
     method: 'POST',
     headers: {
       "Content-Type": "application/json"
@@ -142,7 +142,7 @@ function handleNewUser(e) {
     username: newName
   }
 
-  fetch(`http://localhost:3000/users/${localStorage.id}`, {
+  fetch(`https://east-side-stargazing-be.herokuapp.com/users/${localStorage.id}`, {
     method: 'PATCH',
     headers: {
       "Content-Type": "application/json",
