@@ -1,0 +1,135 @@
+
+/* layout */
+body {
+  font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+/* sidebar */
+.sidebarConstell {
+  transition: 0.8s;
+}
+
+.sidebarConstell:hover{
+  background-color: rgb(165, 158, 197)
+}
+
+
+aside.sidebar {
+  grid-area: nav;
+}
+
+aside.sidebar h1 {
+  margin: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+aside.sidebar {
+  background-color: rgb(131, 114, 204);
+}
+
+aside.sidebar {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+aside.sidebar  {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: background-color .3s ease;
+  line-height: 1.5rem;
+}
+
+aside.sidebar {
+  font-weight: bold;
+}
+
+#constellation-container {
+  height: 100%
+  width: 90%;
+  padding: 0;
+}
+
+div.topnav {
+  background-color: rgb(131, 114, 204);
+  align-items: center;
+}
+
+/* detail */
+section {
+  grid-area: content;
+  padding: 2rem;
+  background-color: rgb(131, 114, 204);
+}
+
+#detail {
+  max-width: 80%;
+}
+
+#star-detail img {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  position: center;
+  flex-direction: column;
+}
+
+/* modal */
+#modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#new-user-form {
+  background-color: rgb(100, 99, 197);
+  margin-top: 20vh;
+  width: 600px;
+  margin: 20vh auto 0;
+}
+#update-user-form {
+  background-color: rgb(84, 82, 192);
+  margin-top: 20vh;
+  width: 600px;
+  margin: 20vh auto 0;
+}
+/* forms */
+form {
+  padding: 1em;
+}
+
+form input,
+form textarea {
+  display: block;
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.25em 1em;
+  margin: 0.25em 0 0.5em;
+}
+
+form input[type=submit] {
+  margin: 1em 0 0 0;
+  padding: 1em;
+  width: auto;
+  font-weight: 600;
+  cursor: pointer;
+}

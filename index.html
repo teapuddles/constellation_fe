@@ -3,6 +3,7 @@
 <head>
   <script defer src='index.js'> </script>
   <script defer src='modal.js'> </script>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,20 +20,16 @@
 </head>
 <body>
   <aside>
-    <h1>Constellations</h1>
     <h2>Stars by Season</h2>
-    <ul id="constellation-container">
+    <ul class="sidebar" id="constellation-container">
       <!-- Add Stars Here -->
-    </ul>
-    <h2>Other Links</h2>
     </ul>
   </aside>
   <section>
     <div id="star-detail">
-      <h1>Star Info Here</h1>
     </div>
   </section>
-  <div id="modal" style="display: none;" data-action="close">
+  <div id="modal" style="display: none;" class="modal" data-action="close">
     <form id="new-user-form">
       <h4>Login/Create New User</h4>
       <label for="username">Username</label>

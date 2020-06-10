@@ -27,19 +27,25 @@ function renderConstells(constell) {
 function renderConstell(constell) {
   const sidebar = document.querySelector("#constellation-container")
   const sidebarLi = document.createElement("li")
-  sidebarLi.id = constell.id
+  constell.name
+  sidebarLi.className = "sidebarConstell"
   sidebarLi.innerText = constell.name
+  // sidebarLi.innerHTML = `<span>${constell.name}</span>
+  // <button data-action="delete" class="d-btn">X</button>
+  // `
   // sort my constellations into seasons for the filter
 
   sidebar.append(sidebarLi)
-
+  // const dButt = sidebarLi.querySelector(".d-btn")
+  // console.log(dButt)
   sidebarLi.addEventListener('click', () => renderOneConstell(constell))
+  // dButt.addEventListener('click', () => deleteConstell(sidebarLi, constell))
 
 }
 // render one constellations to main section
 function renderOneConstell(constell) {
   const showOne = document.querySelector("#star-detail")
-  
+
   showOne.innerHTML =
     `<img src="${constell.image_url}" alt="${constell.name}">
       <h1>${constell.name}</h1>
@@ -53,7 +59,7 @@ function renderOneConstell(constell) {
       <p class="description">
          ${constell.description}
      </p>`
-    //  add delete to line 51????
+  //  add delete to line 51????
   // like button logic/create likes
   const likeButt = document.querySelector(".like-btn")
   likeButt.addEventListener('click', () => {
@@ -61,8 +67,7 @@ function renderOneConstell(constell) {
     const newLike = {
       constellation_id: constell.id,
       user_id: localStorage.id
-      // local storage is holding my user id so I can create a like. I can get the constellation id 
-      // through the html on line 36. 
+      // local storage is holding my user id so I can create a like.
     }
 
     fetch('http://localhost:3000/likes', {
@@ -147,34 +152,34 @@ function handleNewUser(e) {
   })
 }
 
- // filter buttons
- const sidebar = document.querySelector("#constellation-container")
- const winterButt = document.querySelector('#winter')
- const springButt = document.querySelector('#spring')
- const summerButt = document.querySelector('#summer')
- const autumnButt = document.querySelector('#autumn')
- const allButts = document.querySelector('#all-seasons')
+// filter buttons
+const sidebar = document.querySelector("#constellation-container")
+const winterButt = document.querySelector('#winter')
+const springButt = document.querySelector('#spring')
+const summerButt = document.querySelector('#summer')
+const autumnButt = document.querySelector('#autumn')
+const allButts = document.querySelector('#all-seasons')
 
- winterButt.addEventListener('click', () => {
-   sidebar.innerHTML = ""
-   renderConstells(winterArr)
- })
- springButt.addEventListener('click', () => {
-   sidebar.innerHTML = ""
-   renderConstells(springArr)
- })
- summerButt.addEventListener('click', () => {
-   sidebar.innerHTML = ""
-   renderConstells(summerArr)
- })
- autumnButt.addEventListener('click', () => {
-   sidebar.innerHTML = ""
-   renderConstells(autumnArr)
- })
- allButts.addEventListener('click', () => {
-   sidebar.innerHTML = ""
-   renderConstells(allArr)
- })
+winterButt.addEventListener('click', () => {
+  sidebar.innerHTML = ""
+  renderConstells(winterArr)
+})
+springButt.addEventListener('click', () => {
+  sidebar.innerHTML = ""
+  renderConstells(springArr)
+})
+summerButt.addEventListener('click', () => {
+  sidebar.innerHTML = ""
+  renderConstells(summerArr)
+})
+autumnButt.addEventListener('click', () => {
+  sidebar.innerHTML = ""
+  renderConstells(autumnArr)
+})
+allButts.addEventListener('click', () => {
+  sidebar.innerHTML = ""
+  renderConstells(allArr)
+})
 
 // array of names
 // const names = [ "Ian", "Mazen", "Gracie" ]
@@ -201,6 +206,26 @@ function handleNewUser(e) {
 // x = when button is clicked
 // y = create a user with that name. 
 // z = save to local storage.
+
+// function deleteConstell(sidebarLi, constell) {
+  // remove the list
+  // -list element 
+//   sidebarLi.remove()
+//   console.log(sidebarLi)
+
+//   allArr = allArr.filter(c => c.id !== constell.id)
+//   if (constell.season === "Winter") {
+//     winterArr = winterArr.filter(c => c.id !== constell.id)
+//   }
+
+//   fetch(`http://localhost:3000/constellations/${constell.id}`, {
+//     method: 'DELETE',
+//   })
+//     .then(r => r.json())
+//     .then(constell => console.log(constell))
+// }
+
+
 
 
 
