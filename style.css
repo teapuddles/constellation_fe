@@ -3,6 +3,8 @@
 body {
   font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 14px;
+  background-color: rgb(165, 158, 197);
+  
 }
 
 /* typography */
@@ -14,15 +16,44 @@ h1 {
   margin: 1rem 0;
 }
 
+
+/* top nav */
+
+.topnav {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  display: left;
+}
+
 /* sidebar */
 .sidebarConstell {
   transition: 0.8s;
 }
 
+
+
 .sidebarConstell:hover{
-  background-color: rgb(165, 158, 197)
+  background-color: rgb(84, 82, 192)
 }
 
+.sidebar {
+  display: grid;
+  grid-template-columns: repeat(4, 20px);
+  grid-template-rows: repeat(4, 30px);
+  grid-gap: 10px;
+  margin: auto;
+  justify-content: space-evenly;
+  list-style-type: none;
+  cursor: pointer; 
+}
+
+.sidebarCont h2 {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
 
 aside.sidebar {
   grid-area: nav;
@@ -59,7 +90,7 @@ aside.sidebar {
 }
 
 #constellation-container {
-  height: 100%
+  height: 100%;
   width: 90%;
   padding: 0;
 }
