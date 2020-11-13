@@ -122,6 +122,7 @@ section {
 
 /* modal */
 #modal {
+  font-family: 'Big Shoulders Stencil Display', cursive;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -131,7 +132,13 @@ section {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+#modal h4 {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-size: 20px;
+}
+
 #new-user-form {
+  font-family: 'Big Shoulders Stencil Display', cursive;
   background-color: rgb(100, 99, 197);
   margin-top: 20vh;
   width: 600px;
