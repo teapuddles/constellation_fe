@@ -139,16 +139,14 @@ section {
 
 #new-user-form {
   font-family: 'Big Shoulders Stencil Display', cursive;
-  background-color: rgb(100, 99, 197);
-  margin-top: 20vh;
-  width: 600px;
+  background-color: rgb(131, 114, 204);
+  width: 250px;
   margin: 20vh auto 0;
 }
 #update-user-form {
   background-color: rgb(84, 82, 192);
-  margin-top: 20vh;
-  width: 600px;
-  margin: 20vh auto 0;
+  width: 250px;
+  margin: 0vh auto 0;
 }
 /* forms */
 form {
@@ -160,7 +158,7 @@ form textarea {
   display: block;
   font-size: 0.8rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 200px;
   padding: 0.25em 1em;
   margin: 0.25em 0 0.5em;
 }
@@ -169,6 +167,6 @@ form input[type=submit] {
   margin: 1em 0 0 0;
   padding: 1em;
   width: auto;
-  font-weight: 600;
+  font-weight: 300;
   cursor: pointer;
 }
