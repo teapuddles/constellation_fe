@@ -20,13 +20,19 @@ h1 {
 /* top nav */
 
 .topnav {
+  cursor: pointer;
   font-family: 'Big Shoulders Stencil Display', cursive;
   display: flex;
   justify-content: space-evenly;
+  font-size: 20px;
+  background-size: 20px;
 }
 .title {
-  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-family: 'Bungee Shade', cursive;
+  ;
+  display: inline-flexbox;
   display: left;
+  cursor: crosshair;
 }
 
 /* sidebar */
@@ -44,16 +50,23 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 20px);
   grid-template-rows: repeat(4, 30px);
-  grid-gap: 10px;
+  grid-gap: 50px;
+  padding-bottom: 10px;
   margin: auto;
   justify-content: space-evenly;
   list-style-type: none;
   cursor: pointer; 
 }
 
+.sidebarCont {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-size: 17px;
+}
+
 .sidebarCont h2 {
   font-family: 'Big Shoulders Stencil Display', cursive;
-  padding-left: 59px;
+  font-size: 25px;
+  padding-left: 150px;
 }
 
 aside.sidebar {
@@ -93,12 +106,12 @@ aside.sidebar {
 #constellation-container {
   height: 100%;
   width: 90%;
-  padding: 0;
 }
 
 div.topnav {
   background-color: rgb(131, 114, 204);
   align-items: center;
+  padding: 10px;
 }
 
 /* detail */

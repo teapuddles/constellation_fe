@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Bungee+Shade&display=swap" rel="stylesheet"> 
   <script defer src='index.js'> </script>
   <script defer src='modal.js'> </script>
   <link rel="stylesheet" href="style.css">
@@ -9,8 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <h1 class="title">East Side Stargazing</h1>
   <div class="topnav">
-    <h1 class="title">East Side Stargazing</h1>
+    <!-- <h1 class="title">East Side Stargazing</h1> -->
     <a id="winter">Winter</a>
     <a id="spring">Spring</a>
     <a id="summer">Summer</a>
@@ -30,19 +32,24 @@
     <div id="star-detail">
     </div>
   </section>
-  <div id="modal" style="display: none;" class="modal" data-action="close">
-    <form id="new-user-form">
-      <h4>Login/Create New User</h4>
-      <label for="username">Username</label>
-      <input type="text" name="name">
-      <input type="submit" value="Login or Create User">
-    </form>
-    <form id="update-user-form">
-      <h4>Update Username</h4>
-      <label for="new-username">New Username</label>
-      <input type="text" name="new-name">
-      <input type="submit" value="Update Your Username">
-    </form>
+  <div id="modal" style="display: none;" className="modal" data-action="close">
+    <div style="display: block;" className='new-user-form'>
+      <form id="new-user-form" >
+        <h4>Login/Create New User</h4>
+        <label for="username">Username</label>
+        <input type="text" name="name">
+        <input type="submit" value="Login or Create User">
+      </form>
+    </div>
+    <div style="display: block;" className='update-user-form'>
+      <form id="update-user-form" >
+        <h4>Update Username</h4>
+        <label for="new-username">New Username</label>
+        <input type="text" name="new-name">
+        <input type="submit" value="Update Your Username">
+      </form>
+    </div>
+   
   </div>
 </body>
 </html>
