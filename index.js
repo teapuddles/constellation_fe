@@ -59,7 +59,6 @@ function renderOneConstell(constell) {
       <p class="description">
          ${constell.description}
      </p>`
-  //  add delete to line 51????
   // like button logic/create likes
   const likeButt = document.querySelector(".like-btn")
   likeButt.addEventListener('click', () => {

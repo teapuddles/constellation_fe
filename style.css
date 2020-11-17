@@ -66,7 +66,8 @@ h1 {
 
 .sidebarCont {
   font-family: 'Big Shoulders Stencil Display', cursive;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: bold; 
 }
 
 .sidebarCont h2 {
