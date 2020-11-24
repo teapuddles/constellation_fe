@@ -128,7 +128,7 @@ function handleUserInfo(e) {
       localStorage.id = user.id
       // here is where local storage stores the user id
     })
-  
+  navLoginName()
 }
 
 
