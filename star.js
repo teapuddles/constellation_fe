@@ -1,6 +1,10 @@
-//  function renderOneConstell(constell) {
-//   const showOne = document.querySelector("#star-detail")
+// const modalConstell = document.querySelectorAll(".sidebarConstell")
+// const showOne = document.querySelector("#star-detail")
 
+// modalConstell.addEventListener('click', renderOneConstell())
+
+// function renderOneConstell(){
+//     showOne.style.display = "block"
 //   showOne.innerHTML =
 //     `<img src="${constell.image_url}" alt="${constell.name}">
 //       <h1>${constell.name}</h1>
@@ -34,25 +38,4 @@
 //       .then(r => r.json())
 //       .then(constell => renderOneConstell(constell))
 //   })
-//   // const h1 = showOne.querySelector("h1")
-//   // h1.addEventListener('click', () => reverseFunction(constell))
-
-//   // function reverseFunction(constell) {
-//   //  const constellName = {
-//   //     name: constell.name 
-//   //   }
-
-//   //   fetch('localhost:3000/constellations/${constell.id}/reverse', {
-//   //     method: "PATCH",
-//   //     headers: {
-//   //       "Content-Type": "application/json"
-//   //     },
-//   //     body: JSON.stringify(constellName)
-//   //   })
-//   //   .then(r => r.json())
-//   //   .then(revName => {
-//   //     h1.innerText = revName
-//   //   })
-//   // }
-
 // }

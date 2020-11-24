@@ -4,13 +4,8 @@ const updateUserForm = document.querySelector('.update-user-form')
 const navLogin = document.querySelector('#login')
 
 
-navLogin.addEventListener("click", (e) => {
+navLogin.addEventListener("click", () => {
   modal.style.display = "block"
-  if(e && localStorage.username){
-  //   newUserForm.style.display = 'none';
-  // } else {
-  //   updateUserForm.style.display = 'block';
-  }
 })
 // Hide the form
 window.addEventListener("click", e => {
