@@ -18,6 +18,7 @@ fetch(`https://east-side-stargazing-be.herokuapp.com/constellations`)
     renderConstells(constell)
   })
 
+
 // render all constellations
 function renderConstells(constell) {
   constell.forEach(renderConstell)
@@ -127,7 +128,9 @@ function handleUserInfo(e) {
       localStorage.id = user.id
       // here is where local storage stores the user id
     })
+  
 }
+
 
 //  update user
 const updateForm = document.querySelector("#update-user-form")
@@ -180,6 +183,18 @@ allButts.addEventListener('click', () => {
   sidebar.innerHTML = ""
   renderConstells(allArr)
 })
+
+// Update NavBar
+// use navLogin from modal.js
+window.addEventListener('load', () => {
+  navLoginName()
+})
+
+function navLoginName(){
+  if(localStorage.username){
+    navLogin.innerText = `Hello, ${localStorage.username}`
+  }
+}
 
 // array of names
 // const names = [ "Ian", "Mazen", "Gracie" ]
