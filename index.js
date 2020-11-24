@@ -153,6 +153,7 @@ function handleNewUser(e) {
     },
     body: JSON.stringify(updatedUser)
   })
+  navLoginName()
 }
 
 // filter buttons
@@ -184,7 +185,7 @@ allButts.addEventListener('click', () => {
   renderConstells(allArr)
 })
 
-// Update NavBar
+// Update NavBar on page load if user is already logged in. 
 // use navLogin from modal.js
 window.addEventListener('load', () => {
   navLoginName()
